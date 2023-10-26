@@ -52,3 +52,21 @@
   text-decoration: none;
   color:black
 }
+
+@media screen and (max-width:500px){
+  body{
+    background-color: black;
+  }
+
+  .form_container{
+    width: 100%;
+  }
+
+.form{
+  width:80%;
+}
+
+.form input{
+  width: 100%;
+}
+}
