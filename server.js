@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 app.use(express.json())
 app.use(cors());
 app.use(express.static('./'))
-mongoose.connect('mongodb://127.0.0.1:27017/practice')
+mongoose.connect(process.env.MONGODB_URI)
   .then(()=> console.log('connected to DB'))
   .catch((error)=>console.log(error))
 
