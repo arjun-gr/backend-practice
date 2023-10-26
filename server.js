@@ -51,7 +51,6 @@ app.post('/data',async (req,res)=>{
 
   const save =await insertIntoDb.save()
   res.send("Saved")
-  console.log(save);
 })
 
 app.get('/games',async (req,res)=>{
